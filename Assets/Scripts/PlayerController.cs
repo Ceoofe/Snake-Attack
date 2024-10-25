@@ -31,14 +31,14 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(collision.gameObject);
             score = score + 1;
-            Debug.Log(score);
+            Debug.Log("Score = " + score);
         }
         else if(collision.gameObject.tag == "BadTag")
         {
             Destroy(collision.gameObject);
             score = 0;
             Debug.Log("You lost all of your points!");
-            Debug.Log(score);
+            Debug.Log("Score = " + score);
         }
     }
 }

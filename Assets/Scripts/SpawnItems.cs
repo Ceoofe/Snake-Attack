@@ -24,7 +24,7 @@ public class SpawnItems : MonoBehaviour
     private void Clone()
     {
         int itemsIndex = Random.Range(0, itemsPrefabs.Length);
-        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 10, Random.Range(-spawnRangeZ, spawnRangeZ));
+        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 10, Random.Range(-6.5f, spawnRangeZ));
         Instantiate(itemsPrefabs[itemsIndex], spawnPos, itemsPrefabs[itemsIndex].transform.rotation);
     }
 }

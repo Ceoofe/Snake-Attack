@@ -14,7 +14,7 @@ public class Destroy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.y < 0.6)
+        if(transform.position.y < 0.66)
         {
             Destroy(gameObject);
         }
